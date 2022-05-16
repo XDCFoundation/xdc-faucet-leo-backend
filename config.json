@@ -1,0 +1,17 @@
+{
+    "environment": "live",
+    "debug": false,
+    "Captcha": {
+      "secret": "xxx"
+    },
+    "Ethereum": {
+      "etherToTransfer": 1000,
+      "gasLimit": "0x7b0c",
+      "live": {
+        "rpc": "https://rpc.euphrates.network:8545/",
+        "account": "xdc59870acefbaefe6dadce51fabc4b94c5e34449d37",
+        "privateKey": "xxx"
+      }
+    }
+  }
+  
