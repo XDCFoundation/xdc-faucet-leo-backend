@@ -4,7 +4,7 @@
   "description": "XDC Network Faucet",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --name Faucet",
+    "start": "./node_modules/babel-cli/bin/babel-node.js --presets node8 ./index.js",
     "dev": "nodemon index.js"
   },
   "repository": {
@@ -14,13 +14,15 @@
   "author": "xdcnetwork",
   "license": "MIT",
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-node8": "^1.2.0",
     "body-parser": "^1.17.1",
     "cors": "^2.8.5",
     "ethereumjs-tx": "^1.3.1",
     "express": "^4.15.2",
+    "pm2": "^5.2.0",
     "querystring": "^0.2.0",
-    "web3": "^0.19.1",
-    "xdc3": "^0.20.8",
-    "pm2": "^5.2.0"
+    "xdc3": "^0.20.8"
   }
 }
